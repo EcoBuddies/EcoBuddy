@@ -2,7 +2,7 @@ import axios from "axios";
 import useSWR from "swr";
 import useSWRImmutable from 'swr/immutable'
 
-const baseUrl = "https://tough-bottles-post-88-200-36-60.loca.lt/";
+const baseUrl = "https://dull-oranges-spend-88-200-36-60.loca.lt";
 
 const petFetcher = (deviceId: string) => axios.post(`${baseUrl}/auth/me`, { deviceId }).then((res) => res.data);
 

@@ -31,4 +31,18 @@ export class PetService {
   async getAll(): Promise<Pet[]> {
     return await this.petRepository.find();
   }
+
+  async updatePetStats(pet: Pet, emissionFootprint: number): Promise<Pet | null> {
+    if (!pet.id) {
+      return new Promise((resolve) => resolve(null));
+    }
+    pet.co2emission = (pet.co2emission || 0) + emissionFootprint;
+    pet.happinessLevel = (pet.happinessLevel || 0) + emissionFootprint;
+
+    if (pet.happinessLevel > 100) {
+      pet.happinessLevel = 100;
+    }
+
+    return await this.update(pet.id, pet);
+  }
 }

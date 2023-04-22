@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native';
-import { Camera, requestCameraPermissionsAsync, CameraType } from 'expo-camera';
-import LoadingAnimation from './LoadingAnimation';
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from "react-native";
+import { Camera, requestCameraPermissionsAsync, CameraType } from "expo-camera";
+import LoadingAnimation from "./LoadingAnimation";
 
 const { height, width } = Dimensions.get('window');
 const aspectRatio = width / height;
@@ -18,18 +18,13 @@ const Scan = () => {
   useEffect(() => {
     const getCameraPermission = async () => {
       const { status } = await requestCameraPermissionsAsync();
-      setHasPermission(status === 'granted');
+      setHasPermission(status === "granted");
     };
     getCameraPermission();
   }, []);
 
   const flipCamera = () => {
-    setLoading(false);
-    setType(
-      type === CameraType.back
-        ? CameraType.front
-        : CameraType.back
-    );
+    setType(type === CameraType.back ? CameraType.front : CameraType.back);
   };
 
   const takePicture = async () => {
@@ -58,17 +53,15 @@ const Scan = () => {
         style={styles.camera}
         type={type}
         onLayout={handleCameraLayout}
-        onCameraReady={handleCameraReady}
-      >
+        onCameraReady={handleCameraReady}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={flipCamera}>
             <Text style={styles.buttonText}> Flip </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={[styles.button, { backgroundColor: cameraReady ? 'white' : 'grey' }]}
+            style={[styles.button, { backgroundColor: cameraReady ? "white" : "grey" }]}
             onPress={takePicture}
-            disabled={!cameraReady}
-          >
+            disabled={!cameraReady}>
             <Text style={styles.buttonText}>Capture</Text>
           </TouchableOpacity>
         </View>
@@ -80,7 +73,7 @@ const Scan = () => {
       </Camera>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -91,11 +84,11 @@ const styles = StyleSheet.create({
     // aspectRatio,
   },
   buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-    position: 'absolute',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    backgroundColor: "transparent",
+    position: "absolute",
     bottom: 0,
     left: 0,
     right: 0,
@@ -103,25 +96,25 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   button: {
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     borderRadius: 16,
     paddingHorizontal: 32,
     paddingVertical: 8,
   },
   buttonText: {
-    color: '#000',
-    fontWeight: 'bold',
+    color: "#000",
+    fontWeight: "bold",
     fontSize: 16,
   },
   loadingContainer: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    alignItems: "center",
+    justifyContent: "center",
   },
   loadingAnimation: {
     width: 100,
@@ -129,4 +122,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Scan
+export default Scan;
