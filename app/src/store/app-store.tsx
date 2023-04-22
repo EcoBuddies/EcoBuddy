@@ -1,9 +1,12 @@
 import React, { createContext, useContext } from "react";
 import useDeviceUuid from "../hooks/useDeviceUuid";
 import { createNewPet, usePet } from "../data/api";
-import { PetColors } from "../data/types";
+import { IPet, PetColors } from "../data/types";
+import { ActivityIndicator } from "react-native";
+import { theme } from "../theme";
 
 interface MyContextType {
+  pet?: { data: IPet };
   deviceId: string;
   petNotFound: boolean;
   createPet: (input: { name: string; color: PetColors }) => Promise<boolean>;
@@ -34,11 +37,10 @@ const AppStore = ({ children }: { children: React.ReactNode | React.ReactNode[] 
   };
 
   if (isLoading) {
-    // console.warn("loading");
-    return null;
+    return <ActivityIndicator color={theme.colors.g3} size='large' />;
   }
 
-  return <AppContext.Provider value={{ deviceId, petNotFound, createPet }}>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={{ deviceId, petNotFound, createPet, pet }}>{children}</AppContext.Provider>;
 };
 
 export { AppStore, useAppStore };

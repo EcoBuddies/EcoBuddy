@@ -28,7 +28,11 @@ const Main = () => {
           options={{ headerStyle: { backgroundColor: theme.colors.g1 }, headerTintColor: "#fff", headerTitle: "" }}
         />
       ) : (
-        <Stack.Screen name='Home' component={Home} />
+        <Stack.Screen
+          name='Home'
+          component={Home}
+          options={{ headerStyle: { backgroundColor: theme.colors.g1 }, headerTintColor: "#fff", headerTitle: "" }}
+        />
         <Stack.Screen name='Scan' component={Scan} />
       )}
     </Stack.Navigator>
