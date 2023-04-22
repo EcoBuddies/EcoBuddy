@@ -4,20 +4,25 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
  * Screens
  */
 import Home from "./Screens/Home";
-import Auth from "./Screens/Auth";
+import PetCreation from "./Screens/PetCreation";
+import { useAppStore } from "./store/app-store";
 
 export type MainStackParams = {
-  Auth: undefined;
+  PetCreation: undefined;
   Home: undefined;
 };
 
 const Stack = createNativeStackNavigator<MainStackParams>();
 
 const Main = () => {
+  const { petNotFound } = useAppStore();
   return (
     <Stack.Navigator>
-      <Stack.Screen name='Auth' component={Auth} />
-      <Stack.Screen name='Home' component={Home} />
+      {petNotFound ? (
+        <Stack.Screen name='PetCreation' component={PetCreation} />
+      ) : (
+        <Stack.Screen name='Home' component={Home} />
+      )}
     </Stack.Navigator>
   );
 };
