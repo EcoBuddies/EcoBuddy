@@ -3,16 +3,15 @@ import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-nati
 import { Camera, requestCameraPermissionsAsync, CameraType } from 'expo-camera';
 import LoadingAnimation from './LoadingAnimation';
 
-type CameraTypeExtra = 'front' | 'back';
 const { height, width } = Dimensions.get('window');
-const screenRatio = height / width;
+const aspectRatio = width / height;
 
 const Scan = () => {
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
   const [type, setType] = useState<number | CameraType | undefined>(CameraType.back);
   const [cameraReady, setCameraReady] = useState<boolean>(false);
   const [loading, setLoading] = useState(false);
-  const [ratio, setRatio] = useState(screenRatio);
+  const [ratio, setRatio] = useState(aspectRatio);
 
   const cameraRef = useRef<Camera>(null);
 
@@ -25,6 +24,7 @@ const Scan = () => {
   }, []);
 
   const flipCamera = () => {
+    setLoading(false);
     setType(
       type === CameraType.back
         ? CameraType.front
@@ -33,11 +33,12 @@ const Scan = () => {
   };
 
   const takePicture = async () => {
+    setLoading(true);
     if (cameraRef.current && cameraReady) {
       const photo = await cameraRef.current.takePictureAsync();
       // api call
-      setLoading(true);
     }
+    setLoading(false);
   };
 
   const handleCameraReady = () => {
@@ -87,6 +88,7 @@ const styles = StyleSheet.create({
   },
   camera: {
     flex: 1,
+    // aspectRatio,
   },
   buttonContainer: {
     flexDirection: 'row',

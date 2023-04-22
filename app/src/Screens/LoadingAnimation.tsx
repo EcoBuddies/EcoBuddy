@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import LottieView from 'lottie-react-native';
-import loadingAnimation from './loading.json';
+import loadingAnimation from './cameleon-loading.json';
 
 const LoadingAnimation = () => {
   return (
