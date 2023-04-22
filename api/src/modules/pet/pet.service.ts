@@ -24,8 +24,8 @@ export class PetService {
     return await this.petRepository.findOneBy({ id });
   }
 
-  async getByUser(gname: string): Promise<Pet | null> {
-    return await this.petRepository.findOneBy({ name: gname });
+  async getByUser(deviceId: string): Promise<Pet | null> {
+    return await this.petRepository.findOneBy({ user: deviceId });
   }
 
   async getAll(): Promise<Pet[]> {

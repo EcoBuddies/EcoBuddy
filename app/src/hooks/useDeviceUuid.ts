@@ -9,9 +9,12 @@ const useDeviceUuid = () => {
   useEffect(() => {
     const onInit = async () => {
       let uuid = await AsyncStorage.getItem(DEVICE_UUID_KEY);
+
       if (!uuid) {
         uuid = uuidV4.v4() as string;
+        await AsyncStorage.setItem(DEVICE_UUID_KEY, uuid);
       }
+
       setDeviceId(uuid);
     };
     onInit();

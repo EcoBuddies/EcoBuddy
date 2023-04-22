@@ -7,6 +7,7 @@ import Home from "./Screens/Home";
 import PetCreation from "./Screens/PetCreation";
 import Scan from "./Screens/Scan";
 import { useAppStore } from "./store/app-store";
+import { theme } from "./theme";
 
 export type MainStackParams = {
   PetCreation: undefined;
@@ -21,12 +22,20 @@ const Main = () => {
   return (
     <Stack.Navigator>
       {petNotFound ? (
-        <>
-          <Stack.Screen name='Scan' component={Scan} />
-          <Stack.Screen name='PetCreation' component={PetCreation} />
-        </>
+        <Stack.Screen
+          name='PetCreation'
+          component={PetCreation}
+          options={{ headerStyle: { backgroundColor: theme.colors.g1 }, headerTintColor: "#fff", headerTitle: "" }}
+        />
       ) : (
-        <Stack.Screen name='Home' component={Home} />
+        <>
+          <Stack.Screen
+            name='Home'
+            component={Home}
+            options={{ headerStyle: { backgroundColor: theme.colors.g1 }, headerTintColor: "#fff", headerTitle: "" }}
+          />
+          <Stack.Screen name='Scan' component={Scan} />
+        </>
       )}
     </Stack.Navigator>
   );

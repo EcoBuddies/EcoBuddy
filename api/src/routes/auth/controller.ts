@@ -2,13 +2,13 @@ import { Context } from "koa";
 import { PetService } from "../../modules/pet/pet.service";
 
 interface LoginBody {
-  gname: string;
+  deviceId: string;
 }
 
 export const me = async (ctx: Context) => {
   const petService = new PetService();
-  const { gname } = ctx.body as LoginBody;
-  const pet = await petService.getByUser(gname);
+  const { deviceId } = ctx.request.body as LoginBody;
+  const pet = await petService.getByUser(deviceId);
   const hasPet = pet !== null;
 
   ctx.body = {
