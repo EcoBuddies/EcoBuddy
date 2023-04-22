@@ -5,7 +5,7 @@ import bodyParser from "koa-bodyparser";
 import envConfig from "./config/env";
 import DatabaseConnection from "./config/database";
 import authRouter from "./routes/auth";
-import petRouter from "./routes/auth";
+import petRouter from "./routes/pet";
 import compose from "koa-compose";
 
 const app = new Koa();
