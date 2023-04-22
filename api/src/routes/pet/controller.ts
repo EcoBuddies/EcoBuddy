@@ -11,6 +11,7 @@ export const create = async (ctx: Context): Promise<void> => {
   const {
     pet: { color, user, name },
   } = ctx.request.body as CreatePetBody;
+
   const pet = new Pet();
   pet.name = name;
   pet.color = color;

@@ -12,7 +12,7 @@ interface MyContextType {
 const AppContext = createContext<MyContextType>({
   deviceId: "",
   petNotFound: true,
-  createPet: () => new Promise<boolean>((resolve) => resolve(true)),
+  createPet: () => new Promise<boolean>((resolve) => resolve(false)),
 });
 
 const useAppStore = () => useContext(AppContext);
@@ -34,7 +34,7 @@ const AppStore = ({ children }: { children: React.ReactNode | React.ReactNode[] 
   };
 
   if (isLoading) {
-    console.warn("loading");
+    // console.warn("loading");
     return null;
   }
 

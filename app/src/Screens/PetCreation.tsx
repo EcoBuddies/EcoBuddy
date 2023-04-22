@@ -43,11 +43,10 @@ const PetColorOptions: PetColorOption[] = [
 const PetCreation = ({ navigation }: Props) => {
   const [color, setColor] = useState<PetColors>(PetColors.GREEN);
   const [name, setName] = useState("");
-  const { deviceId, createPet } = useAppStore();
+  const { createPet } = useAppStore();
 
   const onSubmit = async () => {
     const ok = await createPet({ name, color });
-
     if (ok) {
       navigation.navigate("Home");
     }
@@ -70,7 +69,7 @@ const PetCreation = ({ navigation }: Props) => {
           <Text style={styles.subtitle}>Select name</Text>
           <TextInput style={styles.input} onChangeText={setName} value={name} />
         </View>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onSubmit}>
           <Text style={styles.buttonText}>Continue</Text>
         </TouchableOpacity>
       </View>
