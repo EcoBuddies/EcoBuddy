@@ -3,10 +3,21 @@ version: '3.8'
 services:
   db:
     build: .
-    # environment:
-    #   MYSQL_DATABASE: mydb
-    #   MYSQL_USER: myuser
-    #   MYSQL_PASSWORD: mypassword
-    #   MYSQL_ROOT_PASSWORD: myrootpassword
     ports:
       - "3306:3306"
+    networks:
+      - mynetwork
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    environment:
+      - PMA_HOST=db
+      - PMA_PORT=3306
+    ports:
+      - "9000:80"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
