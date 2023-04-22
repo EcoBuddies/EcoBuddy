@@ -7,6 +7,7 @@ import { PetColors } from "../data/types";
 import Score from "../components/Score";
 import EditBtn from "../components/EditBtn";
 import CameraBtn from "../components/CameraBtn";
+import HappinessMeter from "../components/HappinessMeter";
 
 const Home = () => {
   const { pet } = useAppStore();
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <View style={styles.topGreenBackground}>
+        <HappinessMeter happiness={pet?.data.happinessLevel} />
         <Text style={styles.title}>{pet?.data.name}</Text>
       </View>
       <View style={styles.row}>
@@ -50,9 +52,10 @@ const styles = StyleSheet.create({
   },
   title: {
     color: theme.colors.white,
-    fontSize: 24,
+    fontSize: 32,
     lineHeight: 32,
     fontWeight: "700",
+    marginTop: 15,
   },
   row: {
     flexDirection: "row",
