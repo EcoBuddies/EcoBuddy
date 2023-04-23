@@ -22,15 +22,18 @@ Technologies used:
 
 # Zaslonske maske
 <p align="center" >
-  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.svgf" />
+  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.png" />
 </p>
 <table>
   <tr>
-    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
-    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
-    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in.png" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-2.png" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-3.png" /></td>
   </tr>
 </table>
+<p align="center" >
+  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" />
+</p>
 
 # Rezultati strojnega učenja - konvolucijske nevronske mreže za klasifikacijo v 6 razredov (CNN)
 
@@ -42,7 +45,7 @@ Technologies used:
 |  | Klasifikacijska točnost | AUC |
 | ---------------|----------------|-----------------|
 | **Nepredtreniran model** | 32.5 % | 0.44  |
-| **ResNet50** | 60.5 % | 0.52  |
+| **ResNet50v2** | 60.5 % | 0.52  |
 | **VGG16** | 62.3 % | 0.50 |
 | **VGG19** | 64.0 % | 0.59  |
 | **MobileNet** | 66.8 % | 0.59  |
