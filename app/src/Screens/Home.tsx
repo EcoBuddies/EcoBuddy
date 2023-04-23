@@ -16,20 +16,23 @@ type Props = StackScreenProps<MainStackParams, "Home">;
 const Home = ({ navigation }: Props) => {
   const { pet } = useAppStore();
 
+  if (!pet?.data) {
+    return null; // loading
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.topGreenBackground}>
-        <HappinessMeter happiness={pet?.data.happinessLevel} />
-        <Text style={styles.title}>{pet?.data.name}</Text>
+        <HappinessMeter happiness={pet?.data?.happinessLevel} />
+        <Text style={styles.title}>{pet?.data?.name}</Text>
       </View>
       <View style={styles.row}>
-        <Score score={pet?.data.co2emission} />
+        <Score score={pet?.data?.co2emission} />
         <EditBtn />
       </View>
       <View style={styles.pet}>
-        <Pet color={pet?.data.color || PetColors.GREEN} />
+        <Pet color={pet?.data?.color || PetColors.GREEN} />
       </View>
-      <Text style={styles.subtitle}>CO2 meter</Text>
       <CameraBtn onPress={() => navigation.navigate("Scan")} />
     </View>
   );

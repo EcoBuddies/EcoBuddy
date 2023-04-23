@@ -1,6 +1,6 @@
-import React, { createContext, useContext } from "react";
+import React, {createContext, useContext } from "react";
 import useDeviceUuid from "../hooks/useDeviceUuid";
-import { createNewPet, usePet, sendImage as sendImageApi } from "../data/api";
+import { createNewPet, sendImage as sendImageApi, usePet } from "../data/api";
 import { IPet, PetColors } from "../data/types";
 import { ActivityIndicator } from "react-native";
 import { theme } from "../theme";
@@ -44,6 +44,9 @@ const AppStore = ({ children }: { children: React.ReactNode | React.ReactNode[] 
       deviceId,
       scan: input.image,
     });
+
+    await refetchPet();
+
     return ok;
   };
 

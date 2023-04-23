@@ -46,17 +46,16 @@ const Scan = () => {
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.All,
       allowsEditing: true,
-      aspect: [4, 3],
-      quality: 1,
+      aspect: [1, 1],
+      quality: 0.05,
+      base64: true,
     });
 
     if (!result.canceled) {
       let base64Img = null;
       try {
-        const base64 = await FileSystem.readAsStringAsync(result.assets[0].uri, {
-          encoding: FileSystem.EncodingType.Base64,
-        });
-        base64Img = `data:image/jpg;base64,${base64}`;
+        console.log(result.assets[0]);
+        base64Img = `${result.assets[0].base64}`;
         const ok = await sendImage({ image: base64Img });
         if (ok) {
         }

@@ -22,7 +22,7 @@ export const scan = async (ctx: Context) => {
       const updatedPet = await petService.updatePetStats(user, carbonFootprint);
 
       if (!updatedPet) {
-        throw new Error("err");
+        throw new Error("Pet not updated succesfully");
       }
 
       ctx.status = 200;
