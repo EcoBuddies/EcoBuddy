@@ -22,7 +22,7 @@ Technologies used:
 
 # Zaslonske maske
 
-<p align="center" >
+<p align-content="row" >
   <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
   <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
 </p>
