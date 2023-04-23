@@ -22,13 +22,13 @@ Technologies used:
 
 # Zaslonske maske
 <p align="center" >
-  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" />
+  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.png" />
 </p>
 <table>
   <tr>
-    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
-    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
-    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in.png" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-2.png" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-3.png" /></td>
   </tr>
 </table>
 
