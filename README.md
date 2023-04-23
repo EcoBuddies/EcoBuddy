@@ -1,6 +1,6 @@
 # EcoBuddy: The Recycling Companion
 
-<p align="center">
+<p align="center" width='50%' height='50%'>
   <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
 </p>
 
