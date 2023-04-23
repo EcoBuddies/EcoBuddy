@@ -1,7 +1,7 @@
 # EcoBuddy: The Recycling Companion
 
 <p align="center" >
-  <img width='50%' heigth='50%' src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
+  <img width='40%' heigth='40%' src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
 </p>
 
 (*SLO*)
@@ -31,9 +31,12 @@ Technologies used:
     <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-3.png" /></td>
   </tr>
 </table>
-<p align="center" >
-  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" />
-</p>
+<table>
+  <tr align="center">
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Home-screen-2.png" /></td>
+  </tr>
+</table>
 
 # Rezultati strojnega učenja - konvolucijske nevronske mreže za klasifikacijo v 6 razredov (CNN)
 
