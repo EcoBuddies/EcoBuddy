@@ -20,12 +20,17 @@ Technologies used:
 - Backend (Node.js + Python flask)
 - Machine learning (Convolutional neural network (CNN) for purpose of waste/litter recognition)
 
-# Rezultati strojnega učenja - konvolucijske nevronske mreže (CNN)
+# Rezultati strojnega učenja - konvolucijske nevronske mreže za klasifikacijo v 6 razredov (CNN)
 
-| Column 1 Header | Column 2 Header | Column 3 Header |
+* 6 razredov: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
+
+|  | Klasifikacijska točnost | AUC |
 | ---------------|----------------|-----------------|
-| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3  |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3  |
-| Row 3, Column 1 | Row 3, Column 2 | Row 3, Column 3  |
+| **nepredtreniran model** | 32.5 % | 0.44  |
+| **ResNet50** | 60.5 % | 0.52  |
+| **VGG16** | 62.3 % | 0.50 |
+| **VGG19** | 64.0 % | 0.59  |
+| **MobileNet** | 66.8 % | 0.59  |
+| **EfficientNet** | 80.0 % | 0.71  |
 
 
