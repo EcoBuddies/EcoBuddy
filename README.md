@@ -31,9 +31,12 @@ Technologies used:
     <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-3.png" /></td>
   </tr>
 </table>
-<p align="center" >
-  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" />
-</p>
+<table>
+  <tr>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Home-screen-2.png" /></td>
+  </tr>
+</table>
 
 # Rezultati strojnega učenja - konvolucijske nevronske mreže za klasifikacijo v 6 razredov (CNN)
 
