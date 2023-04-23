@@ -9,6 +9,7 @@ import { LABELS } from "../components/Trash";
 import { IResponse } from "../data/api";
 import { StackScreenProps } from "@react-navigation/stack";
 import { MainStackParams } from "../Main";
+import SplashScreen from "./SplashScreen";
 
 type Props = StackScreenProps<MainStackParams, "Scan">;
 
@@ -63,9 +64,10 @@ const Scan = ({ navigation }: Props) => {
     if (!result.canceled) {
       let base64Img = null;
       try {
-        console.log(result.assets[0]);
         base64Img = `${result.assets[0].base64}`;
+        setLoading(true);
         const { ok, label } = (await sendImage({ image: base64Img })) as IResponse;
+        setLoading(false);
         if (ok) {
           setLabel(label);
           setModal(true);
@@ -85,6 +87,10 @@ const Scan = ({ navigation }: Props) => {
     const screenRatio = screenHeight / screenWidth;
     setRatio(screenRatio);
   }, []);
+
+  if (loading) {
+    return <SplashScreen />;
+  }
 
   return (
     <View style={styles.container}>
@@ -118,11 +124,6 @@ const Scan = ({ navigation }: Props) => {
             <Text style={styles.buttonText}>Capture</Text>
           </TouchableOpacity>
         </View>
-        {loading && (
-          <View style={styles.loadingContainer}>
-            <LoadingAnimation />
-          </View>
-        )}
       </Camera>
     </View>
   );
