@@ -29,13 +29,14 @@ export const scan = async (ctx: Context) => {
       ctx.body = {
         ok: true,
         pet: updatedPet,
+        label,
       };
     } else {
       ctx.status = 400;
-      ctx.body = { ok: false, pet: null };
+      ctx.body = { ok: false, pet: null, label: null };
     }
   } catch (error) {
     ctx.status = 500;
-    ctx.body = { ok: false, pet: null };
+    ctx.body = { ok: false, pet: null, label: null };
   }
 };

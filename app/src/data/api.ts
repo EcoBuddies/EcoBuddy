@@ -2,6 +2,7 @@ import axios from "axios";
 import { mutate } from "swr";
 import useSWRImmutable from "swr/immutable";
 import pako from "pako";
+import { LABELS } from "../components/Trash";
 
 const baseUrl = "https://cruel-parks-greet-88-200-36-60.loca.lt";
 
@@ -54,20 +55,18 @@ interface ScanInput {
   scan: string;
 }
 
-export const sendImage = async (input: ScanInput) => {
+export interface IResponse {
+  ok: boolean;
+  label: LABELS | null;
+}
+
+export const sendImage = async (input: ScanInput): Promise<IResponse> => {
   try {
     const response = await axios.post(`${baseUrl}/carbon/scan`, { user: input.deviceId, img: input.scan });
-    const { ok, pet } = response.data;
+    const { ok, pet, label } = response.data;
     await mutate(`${input.deviceId}`, pet);
-    return { ok };
+    return { ok, label };
   } catch (error) {
-    console.error(error);
-    if (error instanceof Error) {
-      if (error.message.includes("413") || error.message.includes("502")) {
-        return retryRequest(input.deviceId);
-      }
-      console.error(error.message);
-    }
-    return { ok: false };
+    return { ok: false, label: null };
   }
 };

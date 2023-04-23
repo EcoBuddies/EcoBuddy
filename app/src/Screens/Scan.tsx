@@ -3,18 +3,27 @@ import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from "react-nati
 import { Camera, requestCameraPermissionsAsync, CameraType } from "expo-camera";
 import LoadingAnimation from "./LoadingAnimation";
 import * as ImagePicker from "expo-image-picker";
-import * as FileSystem from "expo-file-system";
 import { useAppStore } from "../store/app-store";
+import Modal from "../components/Modal";
+import { LABELS } from "../components/Trash";
+import { IResponse } from "../data/api";
+import { StackScreenProps } from "@react-navigation/stack";
+import { MainStackParams } from "../Main";
+
+type Props = StackScreenProps<MainStackParams, "Scan">;
 
 const { height, width } = Dimensions.get("window");
 const aspectRatio = width / height;
 
-const Scan = () => {
+const Scan = ({ navigation }: Props) => {
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
   const [type, setType] = useState<number | CameraType | undefined>(CameraType.back);
   const [cameraReady, setCameraReady] = useState<boolean>(false);
   const [loading, setLoading] = useState(false);
   const [ratio, setRatio] = useState(aspectRatio);
+
+  const [modal, setModal] = useState(false);
+  const [label, setLabel] = useState<LABELS | null>(null);
 
   const { sendImage } = useAppStore();
 
@@ -56,8 +65,10 @@ const Scan = () => {
       try {
         console.log(result.assets[0]);
         base64Img = `${result.assets[0].base64}`;
-        const ok = await sendImage({ image: base64Img });
+        const { ok, label } = (await sendImage({ image: base64Img })) as IResponse;
         if (ok) {
+          setLabel(label);
+          setModal(true);
         }
       } catch (error) {
         console.log(error);
@@ -77,6 +88,16 @@ const Scan = () => {
 
   return (
     <View style={styles.container}>
+      {modal && (
+        <Modal
+          labels={label}
+          modalVisible={modal}
+          setModalVisible={() => {
+            setModal(false);
+            navigation.navigate("Home");
+          }}
+        />
+      )}
       <Camera
         ref={cameraRef}
         style={styles.camera}

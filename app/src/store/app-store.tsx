@@ -1,6 +1,6 @@
-import React, {createContext, useContext } from "react";
+import React, { createContext, useContext } from "react";
 import useDeviceUuid from "../hooks/useDeviceUuid";
-import { createNewPet, sendImage as sendImageApi, usePet } from "../data/api";
+import { IResponse, createNewPet, sendImage as sendImageApi, usePet } from "../data/api";
 import { IPet, PetColors } from "../data/types";
 import { ActivityIndicator } from "react-native";
 import { theme } from "../theme";
@@ -11,14 +11,14 @@ interface MyContextType {
   deviceId: string;
   petNotFound: boolean;
   createPet: (input: { name: string; color: PetColors }) => Promise<boolean>;
-  sendImage: (input: { image: string }) => Promise<boolean>;
+  sendImage: (input: { image: string }) => Promise<IResponse | false>;
 }
 
 const AppContext = createContext<MyContextType>({
   deviceId: "",
   petNotFound: true,
   createPet: () => new Promise<boolean>((resolve) => resolve(false)),
-  sendImage: () => new Promise<boolean>((resolve) => resolve(false)),
+  sendImage: () => new Promise<IResponse | false>((resolve) => resolve(false)),
 });
 
 const useAppStore = () => useContext(AppContext);
@@ -40,14 +40,14 @@ const AppStore = ({ children }: { children: React.ReactNode | React.ReactNode[] 
   };
 
   const sendImage = async (input: { image: string }) => {
-    const { ok } = await sendImageApi({
+    const { ok, label } = await sendImageApi({
       deviceId,
       scan: input.image,
     });
 
     await refetchPet();
 
-    return ok;
+    return { ok, label };
   };
 
   if (isLoading) {

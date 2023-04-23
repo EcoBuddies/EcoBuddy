@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d50affd9-4f21-4d76-a43b-c6404d71be4f" name="Changes" comment="feat: scanner">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/modules/pet/pet.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/modules/pet/pet.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/modules/scan/scan.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/modules/scan/scan.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/routes/carbon/controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/carbon/controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Screens/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Screens/Scan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Screens/Scan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/data/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/data/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/store/app-store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/store/app-store.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682200105523</updated>
-      <workItem from="1682200107214" duration="10577000" />
+      <workItem from="1682200107214" duration="11255000" />
     </task>
     <task id="LOCAL-00001" summary="feat: finish scan api">
       <created>1682215849831</created>
@@ -70,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682220382757</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: scanner">
+      <created>1682235473254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682235473254</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,7 +84,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="carbon-stuff" />
                       </list>
                     </value>
                   </entry>
