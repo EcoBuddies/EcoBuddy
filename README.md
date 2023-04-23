@@ -1,4 +1,6 @@
-# EcoBuddy
+<p align="center">
+  # EcoBuddy
+</p>
 
 <p align="center">
   <img src="https://github.com/GreenHack-group/izziv-poplave/blob/master/client/assets/pozivko-ico.png" />
