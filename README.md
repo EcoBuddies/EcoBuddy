@@ -23,7 +23,9 @@ Technologies used:
 # Rezultati strojnega učenja - konvolucijske nevronske mreže za klasifikacijo v 6 razredov (CNN)
 
 * 6 razredov: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
-* nepredtreniran model (z vso arhitekturo plasti - npr. od goščenja do ploščenja (Flatten()) v bottlenecku CNN) je na voljo ```machine-learning\model.py```
+* Nepredtreniran model (z vso arhitekturo plasti - npr. od goščenja do ploščenja (Flatten()) v bottlenecku CNN) je na voljo ```machine-learning\model.py```.
+* Za treniranje (*train dataset*) in ovrednotenje (*test dataset*) modela smo uporabili 22.596 slik, ki so bile pridobljene iz večih odprto-kodnih zbirk na Githubu.
+* Razmerje med množico za treniranje in ovrednotenje modela je 70:30.
 
 |  | Klasifikacijska točnost | AUC |
 | ---------------|----------------|-----------------|
