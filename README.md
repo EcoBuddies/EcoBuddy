@@ -21,7 +21,9 @@ Technologies used:
 - Machine learning (Convolutional neural network (CNN) for purpose of waste/litter recognition)
 
 # Zaslonske maske
-
+<p align="center" >
+  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.svgf" />
+</p>
 <table>
   <tr>
     <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
