@@ -2,8 +2,11 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from "react-native";
 import { Camera, requestCameraPermissionsAsync, CameraType } from "expo-camera";
 import LoadingAnimation from "./LoadingAnimation";
+import * as ImagePicker from "expo-image-picker";
+import * as FileSystem from "expo-file-system";
+import { useAppStore } from "../store/app-store";
 
-const { height, width } = Dimensions.get('window');
+const { height, width } = Dimensions.get("window");
 const aspectRatio = width / height;
 
 const Scan = () => {
@@ -12,6 +15,8 @@ const Scan = () => {
   const [cameraReady, setCameraReady] = useState<boolean>(false);
   const [loading, setLoading] = useState(false);
   const [ratio, setRatio] = useState(aspectRatio);
+
+  const { sendImage } = useAppStore();
 
   const cameraRef = useRef<Camera>(null);
 
@@ -36,6 +41,31 @@ const Scan = () => {
     setLoading(false);
   };
 
+  const pickImage = async () => {
+    // No permissions request is necessary for launching the image library
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
+    });
+
+    if (!result.canceled) {
+      let base64Img = null;
+      try {
+        const base64 = await FileSystem.readAsStringAsync(result.assets[0].uri, {
+          encoding: FileSystem.EncodingType.Base64,
+        });
+        base64Img = `data:image/jpg;base64,${base64}`;
+        const ok = await sendImage({ image: base64Img });
+        if (ok) {
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  };
+
   const handleCameraReady = () => {
     setCameraReady(true);
   };
@@ -57,6 +87,9 @@ const Scan = () => {
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={flipCamera}>
             <Text style={styles.buttonText}> Flip </Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={pickImage}>
+            <Text style={styles.buttonText}>Gallery</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.button, { backgroundColor: cameraReady ? "white" : "grey" }]}

@@ -37,7 +37,7 @@ const Main = () => {
             component={Home}
             options={{ headerStyle: { backgroundColor: theme.colors.g1 }, headerTintColor: "#fff", headerTitle: "" }}
           />
-          <Stack.Screen name='Scan' component={Scan} />
+          <Stack.Screen name='Scan' component={Scan} options={{ headerBackVisible: true, title: "Camera" }} />
         </>
       )}
     </Stack.Navigator>

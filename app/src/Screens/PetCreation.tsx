@@ -6,7 +6,6 @@ import { PetColors } from "../data/types";
 import PetColorPicker from "../components/PetColorPicker";
 import Pet from "../components/Pet";
 import { useAppStore } from "../store/app-store";
-import { createNewPet } from "../data/api";
 import { MainStackParams } from "../Main";
 import { StackScreenProps } from "@react-navigation/stack";
 

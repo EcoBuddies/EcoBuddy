@@ -8,8 +8,12 @@ import Score from "../components/Score";
 import EditBtn from "../components/EditBtn";
 import CameraBtn from "../components/CameraBtn";
 import HappinessMeter from "../components/HappinessMeter";
+import { MainStackParams } from "../Main";
+import { StackScreenProps } from "@react-navigation/stack";
 
-const Home = () => {
+type Props = StackScreenProps<MainStackParams, "Home">;
+
+const Home = ({ navigation }: Props) => {
   const { pet } = useAppStore();
 
   return (
@@ -26,7 +30,7 @@ const Home = () => {
         <Pet color={pet?.data.color || PetColors.GREEN} />
       </View>
       <Text style={styles.subtitle}>CO2 meter</Text>
-      <CameraBtn onPress={() => console.warn("Camera")} />
+      <CameraBtn onPress={() => navigation.navigate("Scan")} />
     </View>
   );
 };

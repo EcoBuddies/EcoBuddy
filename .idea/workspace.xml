@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d50affd9-4f21-4d76-a43b-c6404d71be4f" name="Changes" comment="" />
+    <list default="true" id="d50affd9-4f21-4d76-a43b-c6404d71be4f" name="Changes" comment="feat: finish scan api">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Screens/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Screens/PetCreation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Screens/PetCreation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Screens/Scan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Screens/Scan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/data/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/data/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/store/app-store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/store/app-store.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +51,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682200105523</updated>
-      <workItem from="1682200107214" duration="805000" />
+      <workItem from="1682200107214" duration="2843000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: finish scan api">
+      <created>1682215849831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682215849831</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,5 +88,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: finish scan api" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: finish scan api" />
   </component>
 </project>
