@@ -1,7 +1,7 @@
 # EcoBuddy: The Recycling Companion
 
-<p align="center" width='50%' height='50%'>
-  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
+<p align="center" >
+  <img width='50%' heigth='50%' src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
 </p>
 
 Pozivko is a mobile application for iOS and Android which offers informational and up to the point visualisations of Hydrological station measurements in Slovenia.
