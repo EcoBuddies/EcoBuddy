@@ -20,6 +20,13 @@ Technologies used:
 - Backend (Node.js + Python flask)
 - Machine learning (Convolutional neural network (CNN) for purpose of waste/litter recognition)
 
+# Zaslonske maske
+
+<p align="center" >
+  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
+  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
+</p>
+
 # Rezultati strojnega učenja - konvolucijske nevronske mreže za klasifikacijo v 6 razredov (CNN)
 
 * 6 razredov: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
@@ -36,4 +43,9 @@ Technologies used:
 | **MobileNet** | 66.8 % | 0.59  |
 | **EfficientNet** | 80.0 % | 0.71  |
 
+# Člani ekipe
 
+Vita Potočnik
+Luka Tomažič
+Martin  Štrekelj
+Amadej Šenk
