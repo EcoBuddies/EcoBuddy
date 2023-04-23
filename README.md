@@ -22,10 +22,13 @@ Technologies used:
 
 # Zaslonske maske
 
-<p align-content="row" >
-  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
-  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" />
-</p>
+<table>
+  <tr>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
+    <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-green_Idle.gif" /></td>
+  </tr>
+</table>
 
 # Rezultati strojnega učenja - konvolucijske nevronske mreže za klasifikacijo v 6 razredov (CNN)
 
@@ -45,7 +48,7 @@ Technologies used:
 
 # Člani ekipe
 
-Vita Potočnik
-Luka Tomažič
-Martin  Štrekelj
-Amadej Šenk
+* Vita Potočnik
+* Luka Tomažič
+* Martin  Štrekelj
+* Amadej Šenk
