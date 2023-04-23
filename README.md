@@ -32,7 +32,7 @@ Technologies used:
   </tr>
 </table>
 <table>
-  <tr align="center">
+  <tr>
     <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" /></td>
     <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Home-screen-2.png" /></td>
   </tr>
