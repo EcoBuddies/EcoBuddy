@@ -1,8 +1,9 @@
 import axios from "axios";
+import { LABELS } from "../carbon/carbon.service";
 
 interface ModelResponse {
   ok?: boolean;
-  label: string | null;
+  label: LABELS | null;
 }
 
 export class ScanService {
