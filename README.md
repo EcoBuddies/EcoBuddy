@@ -29,7 +29,7 @@ Technologies used:
 
 |  | Klasifikacijska točnost | AUC |
 | ---------------|----------------|-----------------|
-| **nepredtreniran model** | 32.5 % | 0.44  |
+| **Nepredtreniran model** | 32.5 % | 0.44  |
 | **ResNet50** | 60.5 % | 0.52  |
 | **VGG16** | 62.3 % | 0.50 |
 | **VGG19** | 64.0 % | 0.59  |
