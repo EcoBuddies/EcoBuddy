@@ -6,6 +6,7 @@ import envConfig from "./config/env";
 import DatabaseConnection from "./config/database";
 import authRouter from "./routes/auth";
 import petRouter from "./routes/pet";
+import carbonRouter from "./routes/carbon";
 import compose from "koa-compose";
 
 const app = new Koa();
@@ -16,7 +17,7 @@ router.get("/", async (ctx) => {
 });
 
 app.use(bodyParser());
-const apiRoutes = compose([authRouter.routes(), petRouter.routes(), router.routes()]);
+const apiRoutes = compose([authRouter.routes(), petRouter.routes(), carbonRouter.routes(), router.routes()]);
 app.use(apiRoutes);
 
 const { port, env, isDevelopment } = envConfig.server;

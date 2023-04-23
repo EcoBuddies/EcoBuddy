@@ -41,7 +41,7 @@ export class Pet implements IPet {
 
   constructor() {
     this.co2emission = 0;
-    this.happinessLevel = 100;
+    this.happinessLevel = 50;
     this.timeLastFed = new Date();
   }
 }

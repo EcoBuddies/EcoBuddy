@@ -21,12 +21,12 @@ const Stack = createNativeStackNavigator<MainStackParams>();
 
 const Main = () => {
   const { petNotFound } = useAppStore();
-  const [loadingSplashScreen, setloadingSplashScreen] = useState(true);
 
   return (
     <Stack.Navigator>
       {petNotFound ? (
-        <Stack.Screen name='PetCreation'
+        <Stack.Screen
+          name='PetCreation'
           component={PetCreation}
           options={{ headerStyle: { backgroundColor: theme.colors.g1 }, headerTintColor: "#fff", headerTitle: "" }}
         />
@@ -37,7 +37,7 @@ const Main = () => {
             component={Home}
             options={{ headerStyle: { backgroundColor: theme.colors.g1 }, headerTintColor: "#fff", headerTitle: "" }}
           />
-          <Stack.Screen name='Scan' component={Scan} />
+          <Stack.Screen name='Scan' component={Scan} options={{ headerBackVisible: true, title: "Camera" }} />
         </>
       )}
     </Stack.Navigator>
