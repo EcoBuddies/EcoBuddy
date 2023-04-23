@@ -1,12 +1,13 @@
 import axios from "axios";
 import useSWR from "swr";
+import useSWRImmutable from 'swr/immutable'
 
 const baseUrl = "https://tough-bottles-post-88-200-36-60.loca.lt/";
 
 const petFetcher = (deviceId: string) => axios.post(`${baseUrl}/auth/me`, { deviceId }).then((res) => res.data);
 
 export const usePet = (deviceId: string | null) => {
-  const { data, error, isLoading, mutate } = useSWR(deviceId, petFetcher);
+  const { data, error, isLoading, mutate } = useSWRImmutable(deviceId, petFetcher);
 
   return {
     data,

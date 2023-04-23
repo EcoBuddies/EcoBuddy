@@ -4,6 +4,7 @@ import { createNewPet, usePet } from "../data/api";
 import { IPet, PetColors } from "../data/types";
 import { ActivityIndicator } from "react-native";
 import { theme } from "../theme";
+import SplashScreen from "../Screens/SplashScreen";
 
 interface MyContextType {
   pet?: { data: IPet };
@@ -37,7 +38,7 @@ const AppStore = ({ children }: { children: React.ReactNode | React.ReactNode[] 
   };
 
   if (isLoading) {
-    return <ActivityIndicator color={theme.colors.g3} size='large' />;
+    return <SplashScreen />;
   }
 
   return <AppContext.Provider value={{ deviceId, petNotFound, createPet, pet }}>{children}</AppContext.Provider>;
