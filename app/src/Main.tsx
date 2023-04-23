@@ -23,13 +23,6 @@ const Main = () => {
   const { petNotFound } = useAppStore();
   const [loadingSplashScreen, setloadingSplashScreen] = useState(true);
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setloadingSplashScreen(false);
-    }, 2500);
-    return () => clearTimeout(timeoutId);
-  }, []);
-
   return (
     <Stack.Navigator>
       {petNotFound ? (
