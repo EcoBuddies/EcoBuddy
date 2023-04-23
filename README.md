@@ -7,7 +7,7 @@
 (*SLO*)
 **EcoBuddy** je mobilna aplikacija za iOS in Android, ki ponuja ekskluzivno izkušnjo v svetu mobilnih iger na področju zmanjševanja ogljičnega odtisa. Uporabniku je dodeljen njegov ljubljenček, katerega mora negovati. S tem ciljamo na mlajšo populacijo uporabnikov (do 18 let). Preko različnih aktivnosti, pri kateri prištevamo tudi ločevanje odpadkov, se uporabnik spopada z izzivom negovanja ljubljenčka oziroma v razširjenem pomenu - negovanju našega planeta Zemlja. Aplikacija je zelo enostavna za uporabo, nima nobenih uporabniško zahtevnih elementov ter je zelo zabavna.
 
-Technologies used:
+Uporabljene tehnologije:
 - Frontend (React-Native -> podpora za iOS in Android)
 - Backend (Node.js in Python flask)
 - Machine learning (Konvolucijska nevronska mreža (CNN) za namen prepoznavanja slik odpadkov)
@@ -19,4 +19,13 @@ Technologies used:
 - Frontend (React-Native -> support for both iOS and Android)
 - Backend (Node.js + Python flask)
 - Machine learning (Convolutional neural network (CNN) for purpose of waste/litter recognition)
+
+# Rezultati strojnega učenja - konvolucijske nevronske mreže (CNN)
+
+| Column 1 Header | Column 2 Header | Column 3 Header |
+| ---------------|----------------|-----------------|
+| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3  |
+| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3  |
+| Row 3, Column 1 | Row 3, Column 2 | Row 3, Column 3  |
+
 
