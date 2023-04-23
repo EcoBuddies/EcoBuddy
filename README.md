@@ -1,7 +1,4 @@
-<p align="center">
-  # EcoBuddy
-</p>
-
+# EcoBuddy: The Recycling Companion
 <p align="center">
   <img src="https://github.com/GreenHack-group/izziv-poplave/blob/master/client/assets/pozivko-ico.png" />
 </p>
