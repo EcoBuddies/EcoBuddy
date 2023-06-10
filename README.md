@@ -31,7 +31,7 @@
 
 # Izgled
 <p align="center">
-  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.png" width="400" />
+  <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.png" />
 </p>
 <div align="center">
   <table>
