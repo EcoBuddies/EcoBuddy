@@ -57,6 +57,8 @@
 * Razmerje med množico za treniranje in ovrednotenje modela je 70:30.
 * Za razvrščanje slik smo testirali več različnih odprtokodnih modelov:
 
+<div align="center">
+
 |  | Klasifikacijska točnost | AUC |
 | ---------------|----------------|-----------------|
 | **ResNet50v2** | 60.5 % | 0.52  |
@@ -64,6 +66,8 @@
 | **VGG19** | 64.0 % | 0.59  |
 | **MobileNet** | 66.8 % | 0.59  |
 | **EfficientNet** | 80.0 % | 0.71  |
+
+</div>
 
 # Člani ekipe
 
