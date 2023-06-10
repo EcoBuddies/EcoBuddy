@@ -36,21 +36,21 @@
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in.png" width="300" /></td>
-      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-2.png" width="300" /></td>
-      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-3.png" width="300" /></td>
+      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in.png" width="200" /></td>
+      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-2.png" width="200" /></td>
+      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in-3.png" width="200" /></td>
     </tr>
   </table>
   <table>
     <tr>
-      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" width="300" /></td>
-      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Home-screen-2.png" width="300" /></td>
+      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Character-customization.png" width="200" /></td>
+      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Home-screen-2.png" width="200" /></td>
     </tr>
   </table>
   <table>
     <tr>
-      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Trash%20cans.png" width="300" /></td>
-      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Trash%20cans-2.png" width="300" /></td>
+      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Trash%20cans.png" width="200" /></td>
+      <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Trash%20cans-2.png" width="200" /></td>
     </tr>
   </table>
 </div>
