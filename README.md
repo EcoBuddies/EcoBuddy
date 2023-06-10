@@ -12,8 +12,8 @@ Uporabljene tehnologije:
 - Backend (Node.js in Python flask)
 - Tehnologije strojnega učenja (Konvolucijska nevronska mreža (CNN) za namen prepoznavanja slik odpadkov)
 
-(*ANG*)
-**EcoBuddy** is a mobile app for iOS and Android that offers an exclusive experience in the world of mobile gaming in the field of reducing carbon footprint. The user is assigned his pet, which he has to take care of. With this, we are targeting a younger population of users (up to 18 years old). Through various activities, including waste separation, the user tackles the challenge of caring for a pet, or in the extended sense - caring for our beloved planet Earth. The application is very easy to use, does not have any user-demanding elements and is of a lot of fun.
+(*ENG*)
+**EcoBuddy** is a user-friendly mobile application that uses machine learning to identify and sort waste using a smartphone camera. The user "scans" the waste, and the application provides information about which container the waste belongs to. The app also includes gamification elements to engage and educate users, especially children, making the recycling process interactive and useful. With its intuitive interface and scalable design, EcoBuddy aims to empower individuals to actively contribute to waste management and thereby encourage them to live a sustainable lifestyle.
 
 Technologies used:
 - Frontend (React-Native -> support for both iOS and Android)
