@@ -79,6 +79,7 @@
 Smo usklajena štiričlanska ekipa, ki ima celovit nabor znanj in izkušenj s področja programiranja in izdelovanja aplikacij. Svoje spretnosti izpopolnjujemo s sodelovanjem na različnih tekmovanjih in hekatonih. Naše sposobnosti, veščine reševanja problemov in strast do trajnostnega razvoja nam dajejo samozavest pri uspešni izvedbi naše ideje.
 </p> 
 
+<div align="center">
 <table>
   <tr>
     <td><a href="https://www.linkedin.com/in/amadej-%C5%A1enk/"><img src="images/Amadej.png" width="400" /></a></td>
@@ -91,3 +92,4 @@ Smo usklajena štiričlanska ekipa, ki ima celovit nabor znanj in izkušenj s po
     <td><a href="https://www.linkedin.com/in/martin-%C5%A1trekelj/"><img src="images/Martin.png" width="400"/></a></td>
   </tr>
 </table>
+</div>
