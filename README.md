@@ -50,16 +50,15 @@
   </tr>
 </table>
 
-# Rezultati strojnega učenja - konvolucijske nevronske mreže za klasifikacijo v 6 razredov (CNN)
+# Model strojnega učenja - konvolucijske nevronske mreže (CNN) za klasifikacijo v 6 razredov
 
-* 6 razredov: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
-* Nepredtreniran model (z vso arhitekturo plasti - npr. od goščenja do ploščenja (Flatten()) v bottlenecku CNN) je na voljo ```machine-learning\model.py```.
-* Za treniranje (*train dataset*) in ovrednotenje (*test dataset*) modela smo uporabili 22.596 slik, ki so bile pridobljene iz večih odprto-kodnih zbirk na Githubu.
+* Razredi: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
+* Za treniranje (*train dataset*) in vrednotenje (*test dataset*) modela smo uporabili zbirko 22.596 slik, ki so bile pridobljene iz različnih odprto-kodnih zbirk.
 * Razmerje med množico za treniranje in ovrednotenje modela je 70:30.
+* Za razvrščanje slik smo testirali več različnih odprtokodnih modelov:
 
 |  | Klasifikacijska točnost | AUC |
 | ---------------|----------------|-----------------|
-| **Nepredtreniran model** | 32.5 % | 0.44  |
 | **ResNet50v2** | 60.5 % | 0.52  |
 | **VGG16** | 62.3 % | 0.50 |
 | **VGG19** | 64.0 % | 0.59  |
