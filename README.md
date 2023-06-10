@@ -53,12 +53,12 @@
   </tr>
 </table>
 
-# Model strojnega učenja - konvolucijske nevronske mreže (CNN) za klasifikacijo v 6 razredov
+# Strojno učenje
 
-* Razredi: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
+* 6 razredov: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
 * Za treniranje (*train dataset*) in vrednotenje (*test dataset*) modela smo uporabili zbirko 22.596 slik, ki so bile pridobljene iz različnih odprto-kodnih zbirk.
 * Razmerje med množico za treniranje in ovrednotenje modela je 70:30.
-* Za razvrščanje slik smo testirali več različnih odprtokodnih modelov:
+* Za razvrščanje slik smo testirali več različnih odprtokodnih modelov strojnega učenja:
 
 <div align="center">
 
