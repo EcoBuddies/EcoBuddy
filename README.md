@@ -33,6 +33,7 @@
 <p align="center" >
   <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.png" />
 </p>
+<div align="center">
 <table>
   <tr>
     <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Sign-in.png" /></td>
@@ -52,6 +53,7 @@
     <td><img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Trash%20cans-2.png" /></td>
   </tr>
 </table>
+</div>
 
 # Strojno učenje
 
