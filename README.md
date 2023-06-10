@@ -27,7 +27,7 @@
   </tr>
 </table>
 
-# Zaslonske maske
+# Izgled
 <p align="center" >
   <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.png" />
 </p>
