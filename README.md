@@ -5,12 +5,12 @@
 </p>
 
 (*SLO*)
-**EcoBuddy** je mobilna aplikacija za iOS in Android, ki ponuja ekskluzivno izkušnjo v svetu mobilnih iger na področju zmanjševanja ogljičnega odtisa. Uporabniku je dodeljen njegov ljubljenček, katerega mora negovati. S tem ciljamo na mlajšo populacijo uporabnikov (do 18 let). Preko različnih aktivnosti, pri kateri prištevamo tudi ločevanje odpadkov, se uporabnik spopada z izzivom negovanja ljubljenčka oziroma v razširjenem pomenu - negovanju našega planeta Zemlja. Aplikacija je zelo enostavna za uporabo, nima nobenih uporabniško zahtevnih elementov ter je zelo zabavna.
+**EcoBuddy** je uporabniku prijazna mobilna aplikacija, ki uporablja strojno učenje za prepoznavanje in razvrščanje odpadkov s pomočjo kamere pametnega telefona. Uporabnik »skenira« odpadek, aplikacija pa mu poda informacijo o tem, v kateri zabojnik odpadek spada. Aplikacija vključuje tudi elemente igrifikacije za vključitev in izobraževanje uporabnikov, zlasti otrok, zaradi česar je postopek recikliranja interaktiven in koristen. EcoBuddy želi s svojim intuitivnim vmesnikom in razširljivim dizajnom opolnomočiti posameznike, da aktivno prispevajo k ravnanju z odpadki in jih s tem spodbuditi k trajnostnemu načinu življenja.
 
 Uporabljene tehnologije:
 - Frontend (React-Native -> podpora za iOS in Android)
 - Backend (Node.js in Python flask)
-- Machine learning (Konvolucijska nevronska mreža (CNN) za namen prepoznavanja slik odpadkov)
+- Tehnologije strojnega učenja (Konvolucijska nevronska mreža (CNN) za namen prepoznavanja slik odpadkov)
 
 (*ANG*)
 **EcoBuddy** is a mobile app for iOS and Android that offers an exclusive experience in the world of mobile gaming in the field of reducing carbon footprint. The user is assigned his pet, which he has to take care of. With this, we are targeting a younger population of users (up to 18 years old). Through various activities, including waste separation, the user tackles the challenge of caring for a pet, or in the extended sense - caring for our beloved planet Earth. The application is very easy to use, does not have any user-demanding elements and is of a lot of fun.
