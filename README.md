@@ -70,6 +70,9 @@
 </div>
 
 # O nas
+
+Smo usklajena štiričlanska ekipa, ki ima celovit nabor znanj in izkušenj s področja programiranja in izdelovanja aplikacij. Svoje spretnosti izpopolnjujemo s sodelovanjem na različnih tekmovanjih in hekatonih. Naše sposobnosti, veščine reševanja problemov in strast do trajnostnega razvoja nam dajejo samozavest pri uspešni izvedbi naše ideje.
+
 <table>
   <tr>
     <td><a href="https://www.linkedin.com/in/amadej-%C5%A1enk/"><img src="images/Amadej.png" /></a></td>
