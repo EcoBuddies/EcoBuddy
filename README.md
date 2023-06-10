@@ -81,13 +81,13 @@ Smo usklajena štiričlanska ekipa, ki ima celovit nabor znanj in izkušenj s po
 
 <table>
   <tr>
-    <td><a href="https://www.linkedin.com/in/amadej-%C5%A1enk/"><img src="images/Amadej.png" width="200" /></a></td>
-    <td><a href="https://www.linkedin.com/in/lukatomazic/"><img src="images/Luka.png" width="200"/></a></td>
+    <td><a href="https://www.linkedin.com/in/amadej-%C5%A1enk/"><img src="images/Amadej.png" width="400" /></a></td>
+    <td><a href="https://www.linkedin.com/in/lukatomazic/"><img src="images/Luka.png" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><a href="https://www.linkedin.com/in/vita-poto%C4%8Dnik-a4aaa01b8/"><img src="images/Vita.png" width="200"/></a></td>
-    <td><a href="https://www.linkedin.com/in/martin-%C5%A1trekelj/"><img src="images/Martin.png" width="200"/></a></td>
+    <td><a href="https://www.linkedin.com/in/vita-poto%C4%8Dnik-a4aaa01b8/"><img src="images/Vita.png" width="400"/></a></td>
+    <td><a href="https://www.linkedin.com/in/martin-%C5%A1trekelj/"><img src="images/Martin.png" width="400"/></a></td>
   </tr>
 </table>
