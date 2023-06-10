@@ -5,7 +5,9 @@
 </p>
 
 # Opis
-<p align="justify"> <b>EcoBuddy</b> je uporabniku prijazna <b>mobilna aplikacija</b> za iOS in Android, ki uporablja strojno učenje <b>za prepoznavanje in razvrščanje odpadkov</b> s pomočjo kamere pametnega telefona. Uporabnik »skenira« odpadek, aplikacija pa mu poda informacijo o tem, v kateri zabojnik odpadek spada. Aplikacija vključuje tudi elemente <b>igrifikacije</b> za vključitev in izobraževanje uporabnikov, zlasti otrok, zaradi česar je postopek recikliranja interaktiven in koristen. EcoBuddy želi s svojim intuitivnim vmesnikom in razširljivim dizajnom opolnomočiti posameznike, da aktivno prispevajo k ravnanju z odpadki in jih s tem spodbuditi k trajnostnemu načinu življenja. </p>
+<p align="justify"> 
+  <b>EcoBuddy</b> je uporabniku prijazna <b>mobilna aplikacija</b> za iOS in Android, ki uporablja strojno učenje <b>za prepoznavanje in razvrščanje odpadkov</b> s pomočjo kamere pametnega telefona. Uporabnik »skenira«  odpadek, aplikacija pa mu poda informacijo o tem, v kateri zabojnik odpadek spada. Aplikacija vključuje tudi elemente <b>igrifikacije</b> za vključitev in izobraževanje uporabnikov, zlasti otrok, zaradi česar je postopek recikliranja interaktiven in koristen. EcoBuddy želi s svojim intuitivnim vmesnikom in razširljivim dizajnom opolnomočiti posameznike, da aktivno prispevajo k ravnanju z odpadki in jih s tem spodbuditi k trajnostnemu načinu življenja. 
+</p>
 
 
 # Tehnologije
@@ -71,8 +73,9 @@
 </div>
 
 # O nas
-
+<p align="justify"> 
 Smo usklajena štiričlanska ekipa, ki ima celovit nabor znanj in izkušenj s področja programiranja in izdelovanja aplikacij. Svoje spretnosti izpopolnjujemo s sodelovanjem na različnih tekmovanjih in hekatonih. Naše sposobnosti, veščine reševanja problemov in strast do trajnostnega razvoja nam dajejo samozavest pri uspešni izvedbi naše ideje.
+</p> 
 
 <table>
   <tr>
