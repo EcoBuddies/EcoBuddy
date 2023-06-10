@@ -8,18 +8,15 @@
 (*SLO*)
 **EcoBuddy** je uporabniku prijazna mobilna aplikacija, ki uporablja strojno učenje za prepoznavanje in razvrščanje odpadkov s pomočjo kamere pametnega telefona. Uporabnik »skenira« odpadek, aplikacija pa mu poda informacijo o tem, v kateri zabojnik odpadek spada. Aplikacija vključuje tudi elemente igrifikacije za vključitev in izobraževanje uporabnikov, zlasti otrok, zaradi česar je postopek recikliranja interaktiven in koristen. EcoBuddy želi s svojim intuitivnim vmesnikom in razširljivim dizajnom opolnomočiti posameznike, da aktivno prispevajo k ravnanju z odpadki in jih s tem spodbuditi k trajnostnemu načinu življenja.
 
-Uporabljene tehnologije:
-- Frontend (React-Native -> podpora za iOS in Android)
-- Backend (Node.js in Python flask)
-- Tehnologije strojnega učenja (Konvolucijska nevronska mreža (CNN) za namen prepoznavanja slik odpadkov)
+# Tehnologija
 
-(*ENG*)
-**EcoBuddy** is a user-friendly mobile application that uses machine learning to identify and sort waste using a smartphone camera. The user "scans" the waste, and the application provides information about which container the waste belongs to. The app also includes gamification elements to engage and educate users, especially children, making the recycling process interactive and useful. With its intuitive interface and scalable design, EcoBuddy aims to empower individuals to actively contribute to waste management and thereby encourage them to live a sustainable lifestyle.
-
-Technologies used:
 - Frontend (React-Native -> support for both iOS and Android)
 - Backend (Node.js + Python flask)
 - Machine learning (Convolutional neural network (CNN) for purpose of waste/litter recognition)
+
+[![React-Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+[![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/1r0TNJwrDj8MI69udwR6wL/Hackatons?type=design&node-id=0-1&t=4B1xzulJbqNcGLMo-0)
 
 # Zaslonske maske
 <p align="center" >
