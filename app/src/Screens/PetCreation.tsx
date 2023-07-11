@@ -54,7 +54,7 @@ const PetCreation = ({ navigation }: Props) => {
   return (
     <Background>
       <View style={styles.container}>
-        <Text style={styles.title}>Customize your character</Text>
+        <Text style={styles.title}>Customize your EcoBuddy</Text>
         <View style={styles.formWrapper}>
           <View style={styles.pet}>
             <Pet color={color} />

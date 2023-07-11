@@ -9,7 +9,7 @@ interface ModelResponse {
 export class ScanService {
   modelUrl: string = "";
   constructor() {
-    this.modelUrl = "https://shy-bears-follow-212-235-188-3.loca.lt/predict";
+    this.modelUrl = "https://fine-memes-wish-212-235-188-3.loca.lt/predict";
   }
 
   async sendBase64ToModel(base64: string): Promise<ModelResponse> {

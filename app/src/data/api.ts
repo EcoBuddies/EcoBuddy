@@ -4,7 +4,7 @@ import useSWRImmutable from "swr/immutable";
 import pako from "pako";
 import { LABELS } from "../components/Trash";
 
-const baseUrl = "https://cruel-parks-greet-88-200-36-60.loca.lt";
+const baseUrl = "https://fresh-plants-invite-188-230-129-16.loca.lt";
 
 const petFetcher = (deviceId: string) => axios.post(`${baseUrl}/auth/me`, { deviceId }).then((res) => res.data);
 
