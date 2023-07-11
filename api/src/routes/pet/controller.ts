@@ -8,6 +8,7 @@ interface CreatePetBody {
 
 export const create = async (ctx: Context): Promise<void> => {
   const petService = new PetService();
+
   const {
     pet: { color, user, name },
   } = ctx.request.body as CreatePetBody;
