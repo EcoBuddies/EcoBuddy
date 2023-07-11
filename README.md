@@ -5,10 +5,10 @@
 </p>
 
 # Opis
+
 <p align="justify"> 
   <b>EcoBuddy</b> je uporabniku prijazna <b>mobilna aplikacija</b> za iOS in Android, ki uporablja strojno učenje <b>za prepoznavanje in razvrščanje odpadkov</b> s pomočjo kamere pametnega telefona. Uporabnik »skenira«  odpadek, aplikacija pa mu poda informacijo o tem, v kateri zabojnik odpadek spada. Aplikacija vključuje tudi elemente <b>igrifikacije</b> za vključitev in izobraževanje uporabnikov, zlasti otrok, zaradi česar je postopek recikliranja interaktiven in koristen. EcoBuddy želi s svojim intuitivnim vmesnikom in razširljivim dizajnom opolnomočiti posameznike, da aktivno prispevajo k ravnanju z odpadki ter jih s tem spodbuditi k trajnostnemu načinu življenja. 
 </p>
-
 
 # Tehnologije
 
@@ -30,6 +30,7 @@
 </table>
 
 # Izgled
+
 <p align="center">
   <img src="https://github.com/BestHack-poggers/besthack-2023/blob/master/images/Selection.png" width="700" />
 </p>
@@ -57,27 +58,29 @@
 
 # Strojno učenje
 
-* 6 razredov: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
-* Za treniranje (*train dataset*) in vrednotenje (*test dataset*) modela smo uporabili zbirko 22.596 slik, ki so bile pridobljene iz različnih odprto-kodnih zbirk.
-* Razmerje med množico za treniranje in ovrednotenje modela je 70:30.
-* Za razvrščanje slik smo testirali več različnih odprtokodnih modelov strojnega učenja:
+- 6 razredov: papir, embalaža, steklo, biološki odpadki, zbirni center, ostalo
+- Za treniranje (_train dataset_) in vrednotenje (_test dataset_) modela smo uporabili zbirko 22.596 slik, ki so bile
+  pridobljene iz različnih odprto-kodnih zbirk.
+- Razmerje med množico za treniranje in ovrednotenje modela je 70:30.
+- Za razvrščanje slik smo testirali več različnih odprtokodnih modelov strojnega učenja:
 
 <div align="center">
 
-|  | Klasifikacijska točnost | AUC |
-| ---------------|----------------|-----------------|
-| **ResNet50v2** | 60.5 % | 0.52  |
-| **VGG16** | 62.3 % | 0.50 |
-| **VGG19** | 64.0 % | 0.59  |
-| **MobileNet** | 66.8 % | 0.59  |
-| **EfficientNet** | 80.0 % | 0.71  |
+|                  | Klasifikacijska točnost | AUC  |
+| ---------------- | ----------------------- | ---- |
+| **ResNet50v2**   | 60.5 %                  | 0.52 |
+| **VGG16**        | 62.3 %                  | 0.50 |
+| **VGG19**        | 64.0 %                  | 0.59 |
+| **MobileNet**    | 66.8 %                  | 0.59 |
+| **EfficientNet** | 80.0 %                  | 0.71 |
 
 </div>
 
 # O nas
+
 <p align="justify"> 
 Smo usklajena štiričlanska ekipa, ki ima celovit nabor znanj in izkušenj s področja programiranja in izdelovanja aplikacij. Svoje spretnosti izpopolnjujemo s sodelovanjem na različnih tekmovanjih in hekatonih. Naše sposobnosti, veščine reševanja problemov in strast do trajnostnega razvoja nam dajejo samozavest pri uspešni izvedbi naše ideje.
-</p> 
+</p>
 
 <div align="center">
 <table>

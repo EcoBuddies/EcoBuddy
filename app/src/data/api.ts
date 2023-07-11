@@ -1,10 +1,9 @@
 import axios from "axios";
 import { mutate } from "swr";
 import useSWRImmutable from "swr/immutable";
-import pako from "pako";
 import { LABELS } from "../components/Trash";
 
-const baseUrl = "https://fresh-plants-invite-188-230-129-16.loca.lt";
+const baseUrl = "https://yummy-flowers-care.loca.lt";
 
 const petFetcher = (deviceId: string) => axios.post(`${baseUrl}/auth/me`, { deviceId }).then((res) => res.data);
 
@@ -62,7 +61,11 @@ export interface IResponse {
 
 export const sendImage = async (input: ScanInput): Promise<IResponse> => {
   try {
-    const response = await axios.post(`${baseUrl}/carbon/scan`, { user: input.deviceId, img: input.scan });
+    const response = await axios.post(`${baseUrl}/carbon/scan`, {
+      user: input.deviceId,
+      img: input.scan,
+      testMode: false,
+    });
     const { ok, pet, label } = response.data;
     await mutate(`${input.deviceId}`, pet);
     return { ok, label };
